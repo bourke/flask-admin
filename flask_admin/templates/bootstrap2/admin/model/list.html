@@ -160,7 +160,9 @@
     {% endblock %}
     {% endblock %}
 
+    {% if actions %}
     {{ actionlib.form(actions, get_url('.action_view')) }}
+    {% endif %}
 {% endblock %}
 
 {% block tail %}
